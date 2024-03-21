@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_500"
+    tools:context=".ui.home.HomeFragment">
+
+
+    <TextView
+        android:id="@+id/job_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/background"
+        android:fontFamily="times new roman"
+        android:padding="14dp"
+        android:text="All Jobs/News"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SearchView
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/background"
+        android:queryHint="Search your requirements"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="62dp">
+        <!--   Main Screen Scrolling here     -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--     Months      -->
+            <TextView
+                android:id="@+id/months"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="times new roman"
+                android:text="Month"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+            <!--     Date      -->
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="date"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+            <!--     Time      -->
+            <TextClock
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="serif-monospace"
+                android:textColor="@color/teal_200"
+                android:textSize="21sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F4EFEF"
+                android:clickable="true"
+                android:fontFamily="times new roman"
+                android:padding="8dp"
+                android:text="News Papers"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <!--     NewsPapers      -->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/dainik_jagran"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/background_for_category"
+                            android:padding="5dp"
+                            android:src="@drawable/news" />
+
+                        <TextView
+                            android:layout_width="83dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:fontFamily="times new roman"
+                            android:gravity="center"
+                            android:text="Dainik Jagran"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/TOI"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/background_for_category"
+                            android:padding="5dp"
+                            android:src="@drawable/news" />
+
+                        <TextView
+                            android:layout_width="83dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:fontFamily="times new roman"
+                            android:gravity="center"
+                            android:text="Times Of India"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/DB"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/background_for_category"
+                            android:padding="5dp"
+                            android:src="@drawable/news" />
+
+                        <TextView
+                            android:layout_width="83dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:fontFamily="times new roman"
+                            android:gravity="center"
+                            android:text="Dainin Bhaskar"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/hindustan"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/background_for_category"
+                            android:padding="5dp"
+                            android:src="@drawable/news" />
+
+                        <TextView
+                            android:layout_width="83dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:fontFamily="times new roman"
+                            android:gravity="center"
+                            android:text="Hindustan"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/The_Hindu"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/background_for_category"
+                            android:padding="5dp"
+                            android:src="@drawable/news" />
+
+                        <TextView
+                            android:layout_width="83dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:fontFamily="times new roman"
+                            android:gravity="center"
+                            android:text="The Hindu"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/urdu"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/background_for_category"
+                            android:padding="5dp"
+                            android:src="@drawable/news" />
+
+                        <TextView
+                            android:layout_width="83dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:fontFamily="times new roman"
+                            android:gravity="center"
+                            android:text="Urdu News"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+            <!--     poster      -->
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="410dp"
+                        android:layout_height="160dp"
+
+                        app:cardUseCompatPadding="true">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/a" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="410dp"
+                        android:layout_height="160dp"
+                        app:cardUseCompatPadding="true">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/b" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="410dp"
+                        android:layout_height="160dp"
+                        app:cardUseCompatPadding="true">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/c" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+            <!--     Notes      -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:id="@+id/programmingNotes"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/background1"
+                        android:elevation="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:padding="8dp"
+                            android:src="@drawable/notes" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Programing \n     Notes"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/Quantums"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/background1"
+                        android:elevation="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:padding="8dp"
+                            android:src="@drawable/notes" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="    AKTU\nQuantums"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:id="@+id/roadMap"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/background1"
+                        android:elevation="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:padding="8dp"
+                            android:src="@drawable/notes" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Road Maps"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/hindiBook"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/background1"
+                        android:elevation="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:padding="8dp"
+                            android:src="@drawable/notes" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hindi Books"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/upsc_bpsc"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/background1"
+                        android:elevation="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:padding="8dp"
+                            android:src="@drawable/notes" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="UPSC /BPSC"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!-- latest jobs-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/job_background"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/job_background2"
+                        android:gravity="center"
+                        android:text="Website Info"
+                        android:textColor="@color/black"
+                        android:textSize="23dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="This is my website and we are provide the nots and updates"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="This is my website and we are provide the nots and updates"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="This is my website and we are provide the nots and updates"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="This is my website and we are provide the nots and updates"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="This is my website and we are provide the nots and updates"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="This is my website and we are provide the nots and updates"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="This is my website and we are provide the nots and updates"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="This is my website and we are provide the nots and updates"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="This is my website and we are provide the nots and updates"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="This is my website and we are provide the nots and updates"
+                        android:textColor="@color/black" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/job_background"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/job_background2"
+                        android:gravity="center"
+                        android:text="Updates"
+                        android:textColor="@color/black"
+                        android:textSize="23dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="This is my website and we are provide the nots and updates"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="This is my website and we are provide the nots and updates"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="This is my website and we are provide the nots and updates"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="This is my website and we are provide the nots and updates"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="This is my website and we are provide the nots and updates"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="This is my website and we are provide the nots and updates"
+                        android:textColor="@color/black" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

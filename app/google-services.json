@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "890153445072",
+    "firebase_url": "https://n4u-project-default-rtdb.firebaseio.com",
+    "project_id": "n4u-project",
+    "storage_bucket": "n4u-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:890153445072:android:0d0d454eabb1d043c3a0d5",
+        "android_client_info": {
+          "package_name": "com.nsztta.toohelper"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzK2-TdgCSszFKDMDgwxmvu1xtFWjqQlg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:890153445072:android:94155f7eddddd467c3a0d5",
+        "android_client_info": {
+          "package_name": "com.tausif702.n4u"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzK2-TdgCSszFKDMDgwxmvu1xtFWjqQlg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
